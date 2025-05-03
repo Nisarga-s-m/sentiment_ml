@@ -56,6 +56,7 @@ if user_input:
     # === Sentiment Analysis Using Your Model ===
     user_input_tfidf = vectorizer.transform([user_input])  # Convert input to TF-IDF features
     sentiment_prediction = model.predict(user_input_tfidf)[0]  # Predict sentiment
+    print(sentiment_prediction)
 
     # Sentiment Mapping
     sentiment_map = {0: "Negative", 1: "Neutral", 2: "Positive"}  # Adjust based on your model labels
