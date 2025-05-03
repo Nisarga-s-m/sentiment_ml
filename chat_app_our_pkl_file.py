@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import os
+from dotenv import load_dotenv
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load saved model & vectorizer
@@ -13,7 +14,8 @@ def load_model():
     return model, vectorizer
 
 model, vectorizer = load_model()
-
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 # Custom CSS for UI
 st.markdown("""
     <style>
