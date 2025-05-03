@@ -42,8 +42,12 @@ st.markdown('<div class="chat-container">', unsafe_allow_html=True)
 
 # Display chat history
 for msg in st.session_state.messages:
-    css_class = "user-msg" if msg["role"] == "user" else "bot-msg"
-    st.markdown(f'<div class="{css_class}">{msg["content"]}</div><div class="clear"></div>', unsafe_allow_html=True)
+   
+# After sentiment is predicted (place this AFTER sentiment_class is defined)
+    user_message = f"{user_input}<br><span class='sentiment-box {sentiment_class}'>{sentiment_emoji} {sentiment_text}</span>"
+    st.session_state.messages.append({"role": "user", "content": user_message})
+
+
 
 st.markdown('</div>', unsafe_allow_html=True)
 
