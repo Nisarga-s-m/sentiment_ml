@@ -30,7 +30,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("💬 WhatsApp-Style Customer Support")
+st.title("💬 ")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -71,8 +71,13 @@ if user_input:
     # Display sentiment result
     st.markdown(f'<div class="sentiment-box {sentiment_class}">{sentiment_emoji} {sentiment_text}</div>', unsafe_allow_html=True)
 
-    # === Simulated AI Response (Optional) ===
-    bot_reply = "Thank you for reaching out! How can I assist you further?"
+
+       # **Generate AI response**
+    response = openai.chat.completions.create(
+        model="gpt-4-turbo",
+        messages=st.session_state.messages
+    )
+    bot_reply = response.choices[0].message.content
     st.session_state.messages.append({"role": "assistant", "content": bot_reply})
 
     # Display AI response
