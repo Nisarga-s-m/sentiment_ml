@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 # Load saved model & vectorizer
 @st.cache_resource  # Cache the model to avoid reloading on each interaction
 def load_model():
-    with open("nlp_model.pkl", "rb") as model_file:
+    with open("gridsearch_model.pkl", "rb") as model_file:
         model = pickle.load(model_file)
     with open("tfidf_vectorizer.pkl", "rb") as vectorizer_file:
         vectorizer = pickle.load(vectorizer_file)
