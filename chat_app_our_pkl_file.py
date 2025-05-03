@@ -59,7 +59,7 @@ if user_input:
     st.write(sentiment_prediction)
 
     # Sentiment Mapping
-    sentiment_map = {0: "Negative", 1: "Neutral", 2: "Positive"}  # Adjust based on your model labels
+    sentiment_map = {"negative": "Negative", "neutral": "Neutral", "positive": "Positive"}  # Adjust based on your model labels
     sentiment_text = sentiment_map.get(sentiment_prediction, "Neutral")  # Default to Neutral if unknown
 
     sentiment_emojis = {"Positive": "🟢😊", "Neutral": "🟡😐", "Negative": "🔴😠"}
