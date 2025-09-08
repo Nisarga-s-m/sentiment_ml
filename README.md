@@ -106,6 +106,8 @@ A custom AI-powered **WhatsApp-style chat interface** was developed to visualize
 - Highly scalable and flexible architecture
 
 ---
+<img width="1017" height="517" alt="image" src="https://github.com/user-attachments/assets/4836d9a0-be03-43a2-a7e2-79a2d851b356" />
+
 
 ## 📊 Evaluation Metrics
 
@@ -115,7 +117,7 @@ A custom AI-powered **WhatsApp-style chat interface** was developed to visualize
 - F1 Score
 
 ---
-<img width="366" height="251" alt="image" src="https://github.com/user-attachments/assets/079c1e1f-db6c-4e19-b45e-92ffce1541ad" />
+
 
 
 
