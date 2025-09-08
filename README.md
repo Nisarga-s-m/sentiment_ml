@@ -91,6 +91,8 @@ A custom AI-powered **WhatsApp-style chat interface** was developed to visualize
 - Otherwise, bot continues the interaction
 
 ---
+<img width="868" height="602" alt="image" src="https://github.com/user-attachments/assets/1ac03868-f707-482e-8ee0-b5b22b091319" />
+<img width="868" height="580" alt="image" src="https://github.com/user-attachments/assets/063a5cac-f534-45d5-8dab-3430f3060a97" />
 
 ## 🧠 GPT-4 + Vector Store Integration
 
