@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 import sys
-import os
+import 
 
 # Force the use of pysqlite3 instead of system sqlite3
 try:
