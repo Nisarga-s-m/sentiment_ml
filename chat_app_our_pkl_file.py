@@ -3,6 +3,7 @@ import pickle
 import os
 import openai
 from dotenv import load_dotenv
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 # Load saved model & vectorizer
@@ -85,6 +86,7 @@ if user_input:
 
     # Display AI response
     st.markdown(f'<div class="bot-msg">{bot_reply}</div><div class="clear"></div>', unsafe_allow_html=True)
+
 
 
 
